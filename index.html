@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Testimonials | ISFT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">VTCT Skills &middot; Level 5 Financial Trading</p>
+    <h1>A qualification proven by <em>traders worldwide</em></h1>
+    <p class="lede">For 64 years, VTCT has awarded qualifications across the globe, and for 16 of them it has delivered the Level 5 Financial Trading programme. Below are real reflections shared on LinkedIn by learners at approved centres as they progress through the diploma.</p>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search by name or keyword..." aria-label="Search testimonials">
+      <span id="count" class="count"></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="grid" class="grid" aria-live="polite"></section>
+    <p id="empty" class="empty" hidden>No testimonials match your search.</p>
+    <nav id="pagination" class="pagination" aria-label="Testimonials pages"></nav>
+  </main>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-box">
+      <button id="modal-close" class="modal-close" type="button" aria-label="Close">&times;</button>
+      <div id="modal-head" class="modal-head"></div>
+      <div id="modal-body" class="modal-body"></div>
+      <div id="modal-foot" class="modal-foot"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    &copy; <span id="year"></span> ISFT &middot; <a href="https://isftglobal.com" target="_blank" rel="noopener">isftglobal.com</a>
+  </footer>
+
+  <script src="testimonials.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
